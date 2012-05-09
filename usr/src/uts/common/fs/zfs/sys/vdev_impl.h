@@ -21,6 +21,7 @@
 /*
  * Copyright (c) 2005, 2010, Oracle and/or its affiliates. All rights reserved.
  * Copyright (c) 2011, 2015 by Delphix. All rights reserved.
+ * Copyright 2013 Cyril Plisko. All rights reserved.
  */
 
 #ifndef _SYS_VDEV_IMPL_H
@@ -342,6 +343,7 @@ extern vdev_ops_t vdev_file_ops;
 extern vdev_ops_t vdev_missing_ops;
 extern vdev_ops_t vdev_hole_ops;
 extern vdev_ops_t vdev_spare_ops;
+extern vdev_ops_t vdev_raidx_ops;
 
 /*
  * Common size functions

@@ -25,6 +25,7 @@
  * Copyright 2011 Nexenta Systems, Inc.  All rights reserved.
  * Copyright (c) 2013, Joyent, Inc. All rights reserved.
  * Copyright (c) 2014 Integros [integros.com]
+ * Copyright 2012 Cyril Plisko. All rights reserved.
  */
 
 /* Portions Copyright 2010 Robert Milkowski */
@@ -598,6 +599,7 @@ typedef struct zpool_rewind_policy {
 #define	VDEV_TYPE_SPARE			"spare"
 #define	VDEV_TYPE_LOG			"log"
 #define	VDEV_TYPE_L2CACHE		"l2cache"
+#define	VDEV_TYPE_RAIDX			"raidx"
 
 /*
  * This is needed in userland to report the minimum necessary device size.

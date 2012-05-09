@@ -27,6 +27,7 @@
 # Copyright 2016 Garrett D'Amore <garrett@damore.org>
 # Copyright 2016 Joyent, Inc.
 # Copyright 2016 OmniTI Computer Consulting, Inc.  All rights reserved.
+# Copyright 2015 Cyril Plisko.  All rights reserved.
 #
 
 #
@@ -1428,6 +1429,7 @@ ZFS_COMMON_OBJS +=		\
 	vdev_mirror.o		\
 	vdev_missing.o		\
 	vdev_queue.o		\
+	vdev_raidx.o		\
 	vdev_raidz.o		\
 	vdev_root.o		\
 	zap.o			\
