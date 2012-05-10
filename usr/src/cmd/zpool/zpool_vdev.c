@@ -1148,6 +1148,12 @@ is_grouping(const char *type, int *mindev, int *maxdev)
 		return (VDEV_TYPE_L2CACHE);
 	}
 
+	if (strcmp(type, "raidx") == 0) {
+		if (mindev != NULL)
+			*mindev = 2;
+		return (VDEV_TYPE_RAIDX);
+	}
+
 	return (NULL);
 }
 
