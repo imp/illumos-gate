@@ -25,6 +25,7 @@
  * Copyright (c) 2013, Joyent, Inc. All rights reserved.
  * Copyright (c) 2014, Nexenta Systems, Inc. All rights reserved.
  * Copyright (c) 2014 Integros [integros.com]
+ * Copyright (c) 2015 Cyril Plisko. All rights reserved.
  */
 
 #ifdef _KERNEL
@@ -275,4 +276,9 @@ zpool_feature_init(void)
 	    "org.illumos:edonr", "edonr",
 	    "Edon-R hash algorithm.",
 	    ZFEATURE_FLAG_PER_DATASET, edonr_deps);
+
+	zfeature_register(SPA_FEATURE_RAIDX,
+	    "com.mountall:raidx", "raidx",
+	    "RAIDX vdev type.",
+	    ZFEATURE_FLAG_MOS, NULL);
 }

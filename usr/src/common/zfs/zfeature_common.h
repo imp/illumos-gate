@@ -24,6 +24,7 @@
  * Copyright (c) 2013 by Saso Kiselkov. All rights reserved.
  * Copyright (c) 2013, Joyent, Inc. All rights reserved.
  * Copyright (c) 2014 Integros [integros.com]
+ * Copyright (c) 2015 Cyril Plisko. All rights reserved.
  */
 
 #ifndef _ZFEATURE_COMMON_H
@@ -56,6 +57,7 @@ typedef enum spa_feature {
 	SPA_FEATURE_SHA512,
 	SPA_FEATURE_SKEIN,
 	SPA_FEATURE_EDONR,
+	SPA_FEATURE_RAIDX,
 	SPA_FEATURES
 } spa_feature_t;
 
